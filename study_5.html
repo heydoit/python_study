@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>second practice</title>
+
+        <style>
+            h3 {color: palevioletred;}
+            table, th, td{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <h1>2nd web-page</h1>
+        <a href = "study_4.html" target = "_self">Go To 1st web-page</a>    
+
+        <h3>표 만들기</h3>
+
+            <table style = "border:1px solid black">
+                <caption><b>플랫폼 비교</b></caption>
+                <thead>
+                    <tr>
+                        <th>플랫폼 유형</th>
+                        <th>플랫폼 사이트</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>오픈마켓</td>
+                        <td>쿠팡, G마켓, 11번가</td>
+                    </tr>
+                    <tr>
+                        <td>음식배달앱</td>
+                        <td>쿠팡이츠, 배달의민족, 요기요</td>
+                    </tr>
+                </tbody>
+            </table>
+        <h3>입력폼 만들기</h3>
+        <from method = "post" action = "">
+            제목 : <input type = "text" name = "user_name"><br>
+            암호 : <input type = "password" name = "user_name"><br>
+            내용 : <textarea rows = "5" cols = "50" name = "contents">내용을 입력해주세요.</textarea><br>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend><b>개인 프로파일</b></legend>
+                직업유형
+                <select name = "job">
+                    <option value = "">직업선택</option>
+                    <option value = "1">직장인</option>
+                    <option value = "2">학생</option>
+                    <option value = "3">무직/주부</option>
+                </select>
+                <br>
+                <br>
+                <br>
+
+                사용언어
+                <input type="checkbox" name = "lang" value="python"> 파이썬
+                <input type="checkbox" name = "lang" value="java"> 자바
+                <input type="checkbox" name = "lang" value="css"> css
+                <input type="checkbox" name = "lang" value="R"> R
+                <input type="checkbox" name = "lang" value="javascript"> 자바스크립트
+                <br>
+                <br>
+                <br>
+                사용도구
+                <input type="radio" name = "tool" value = "VSCode"> VSCode
+                <input type="radio" name = "tool" value = "파이참"> 파이참
+                <input type="radio" name = "tool" value = "스파이더"> 스파이더
+            </fieldset>
+
+                <input type = "submit" value="전송">
+                <input type = "reset" value="초기화">
+        </from>
+
+
+
+    </body>
+</html>
